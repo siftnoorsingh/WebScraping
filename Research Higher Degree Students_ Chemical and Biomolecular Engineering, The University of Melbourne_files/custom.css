@@ -1,0 +1,539 @@
+/*	Used to manage your own custom styles	*/
+
+/* OVERRIDE complete.css STYLES ON HTML TAGS */
+h1 { }
+h3 + h4 { margin-top: -0.5em;}
+.aside h2 + h3 { margin-top: -0.5em;}
+ol { *margin: 10px 0 10px 10px; }
+/* END */
+
+/* OVERRIDE CLASSES DEFINED IN complete.css */
+
+body .main-block, body.headingblock .main-block {
+	padding-bottom: 20px;
+	background-color: #fff;
+	background-image: none;
+}
+
+
+#main-content {
+	background-color: rgb(255, 255, 255);
+	/*background-color: rgba(255, 255, 255, 0.9);*/
+}
+
+.header .hgroup p { margin-left:35px; padding-top:15px; }
+.header .hgroup h1 { margin-left:35px; padding-top:50px; }
+
+.main h1 { margin-bottom: 1em; }
+
+.main .page-preview h2 a, .main .page-preview h3 a {
+    border-bottom: none;
+}
+
+.colborder {
+}
+
+.footer a:hover { text-decoration: underline;}
+
+.footer { margin-bottom: 0; }
+
+
+#stafflinks {
+    background-color: #F2F2F2;
+	margin-bottom: -24px;
+	padding: 0px 0 25px 0;
+}
+
+#stafflinks .icon {
+    background: none repeat scroll 0 0 #686868;
+    color: #FFFFFF;
+    margin: 0 0 0 20px;
+    padding-left: 8px;
+}
+
+#stafflinks a.icon:hover {
+	text-decoration:underline;
+}
+
+#footernav #backtotop {
+	top: -46px;
+}
+
+.gift { font-size:18px; font-weight:bold; min-width:85%; font-family: 'Droid Sans','Helvetica Neue',Arial,sans-serif;}
+
+
+.alert {
+	padding: 10px 20px 10px 100px;
+}
+/* Defines sitewide background image */
+body.chemical { 
+	background: url("/images/chemical-banner.jpg")	top center repeat-x;
+	background-size: 100% auto;
+	position: absolute;
+}
+
+/*#main-content { background-color: #fff;}
+.aside blockquote {
+	font-size: 14px;
+	margin: 20px 0 20px 0;
+	padding: 0 0 18px 0;
+}
+.nav #centres a {
+  border-bottom: none;
+  text-decoration: none;
+}
+*/
+blockquote p {
+	padding: 18px 18px 0 18px;
+	margin: 0;
+	text-indent: 34px;
+}
+	
+blockquote p + p { text-indent: 0; }
+	
+blockquote a {
+	position: relative;
+	color: #030066;
+	font-weight: normal;
+	font-size: 14px;
+	clear: both;
+	margin-top: 10px;
+	border: 0px;
+}
+
+.footer a:hover { text-decoration: underline;}
+.footer .icon {
+    background: none repeat scroll 0 0 #686868;
+    color: #FFFFFF;
+    padding-left: 8px;
+	margin: -20px 0 0 0;
+}
+.intranet {
+	float:right;
+}
+.centred { text-align: center; }
+/* END */
+
+/* SITEWIDE ENGINEERING SPECIFIC CLASSES */
+
+/* Defines sitewide background image */
+
+/* Used on paragraph tags following an H1 heading in the main-content section of the page	*/
+.top-margin { margin-top: 1em; }
+
+/* Show definition lists as 2 columns, with horizontal borders between each row */
+#main-content dl { clear: both; margin-top: 1em;}
+#main-content dt { font-weight: bold; float: left; width: 30%; margin: 0px 0.5em 1em 0px; padding: 1em 0px 0px 0px; border-top: 1px solid #eee; clear:left;}
+#main-content dd { font-weight: normal; width: 60%; float: left;	margin: 0px 0.5em 1em 0px; padding: 1em 0px 0px 0px; border-top: 1px solid #eee;}
+
+#main-content dl.dl20-80 dt { font-weight: bold; float: left; width: 15%; margin: 0px 0.5em 1em 0px; padding: 1em 0px 0px 0px; border-top: 1px solid #eee; clear:left;}
+#main-content dl.dl20-80 dd { font-weight: normal; width: 80%; float: left;	margin: 0px 0.5em 1em 0px; padding: 1em 0px 0px 0px; border-top: 1px solid #eee;}
+
+.caption { font-weight: bold; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+/* Blue rounded rectangle buttons, such as at the top of the Undergraduate Study page */	
+.keylink, .keylink p {
+	-moz-border-radius: 15px;
+	border-radius: 15px 15px 15px 15px;
+	background-color:#a3bfdc;
+	font-size: 14px;
+	color: #fff;
+	clear: both;
+	padding: 10px 0px 10px 0;
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+}
+.keylink :before { content: "\00BB\0020";}
+.keylink p { padding-left: 10px;}
+.keylink p:hover { background-color:#eee;	 color: #903;}
+a.keylink:link { color: #fff;}
+a.keylink:visited { color: #fff;}
+a.keylink:hover { color: #903;}
+
+/* Pale blue rounded rectangles to highlight content in side bars */	
+.sidefeature {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	background-color: #dfe9f4;
+	color: #3e658e;
+	margin: 5px 0 0 0;
+	padding: 10px;
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+.sidefeature a, .main .sidefeature a:visited 
+{
+	text-decoration: none;
+	border: none;
+}
+.sidefeature a:before
+{ 
+	content: "\00BB\0020";
+}
+/* shows faq questions in consistence appearance, regardless of heading hierarchy on page */
+.faq {
+	font-size: 18px;
+	color: #003366;
+	padding: 10px 0px 0px 0;
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+	border-top: 1px solid #EDEDED;
+}
+/* Used to bold a person's name when it is really a heading	*/
+.person {
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 4px;
+	line-height: 1;
+}
+/* Used to italicise a person's title so the emphasis is not picked up by screen readers	*/
+.title { font-style:italic;}
+
+blockquote.plain, q.plain {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	color: #333;
+	background-image: none;
+	background-color:transparent;
+	position: relative;
+	margin: 0;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+blockquote.plain p:before, q.plain:before { content: '\201C';}
+blockquote.plain p:after, q.plain:after { content: '\201D';}
+blockquote.plain p {
+	padding: 0 5px;
+	margin: 0 0 8px 0;
+	text-indent: 0px;
+}
+	
+.hidden { visibility: hidden;}
+
+.spacer { margin-bottom: 1em; }
+
+/* END */
+
+/* FOR VIDEO EMBEDDED WITH THE JW Player */
+#mediaspace_wrapper, #mediaspace { padding-top: 5px;}
+/* END */
+
+/* STYLES FOR COURSE PLANS */
+table.coursePlan {
+	background-color: #fff;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+table.coursePlan th, table.coursePlan td {
+	border: 1px solid #b9cfe7;
+}
+table.coursePlan tbody tr:nth-child(2n+1) {
+	background: #fff;
+}
+.subjects1 {
+	background-color: #fde69b;
+}
+.subjects2 {
+	background-color: #f59c89;
+}
+.subjects3 {
+	background-color: #71c7e7;
+}
+.subjects4 {
+	background-color: #b2e5b2;
+}
+.noborder, table.coursePlan .noborder {
+	border: none;
+}
+/* END */
+
+/* RSS FEED FORMATTING */	
+.rssfeed h2 {
+	font-size: 14px;
+	color: #4e4e4e;
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin-top: 0;
+	padding-top: 0;
+} 
+.rssfeed h3 {
+	font-size: 12px;	
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+} 
+.rssfeed h4 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #4e4e4e;	
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin-bottom: 0;
+	padding: 0 0 3px 0;
+} 
+.rssfeed h5 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #4e4e4e;	
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin-bottom: 0;	
+	padding: 10px 0 3px 0;
+}
+.rssfeed p {
+	font-size: 12px;
+}
+/* END */
+
+/* CONTACT FORM STYLING */
+.textfieldRequiredMsg, .required-flag {
+	display:none;
+}
+form.contact {
+	margin: 10px 0;
+	padding: 0;
+	border: none;
+}
+form.contact fieldset {
+	margin: 10px 0 10px 0;
+	padding: 10px;
+}
+form.contact legend {
+	text-indent: 0;
+	line-height: 1.3;
+	padding: 5px;
+	font-family: "Droid Sans", sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+form.contact label {
+	text-align: left;
+	margin: 0;
+	padding: 0 0 5px 0;
+	font-weight: normal;
+}
+form.contact p {
+	text-align: left;
+}
+form.contact input[type="radio"] {
+	vertical-align: middle;
+	padding: 0 5px 0 0;
+}
+form.contact input[type="text"] {
+	width: 95%;
+}
+form.contact textarea {
+	width: 95%;
+	height: 150px;
+}
+form.contact input[type=submit] {}
+/* END CONTACT FORM STYLING */
+
+/* LANDING PAGE BANNERS */
+
+.banners { background: rgb(220, 233, 244); background: rgba(145, 181, 218, 0.3); max-width: 100% !important; width: 100% !important; padding: 0px 0px 20px 0; overflow: hidden;
+}
+#home-banners { width: 940px; margin: 0 auto 0px;
+}
+.js-enabled #home-banners { position: relative; height: 292px; margin-bottom: 9px; z-index: 2;
+}
+.js-enabled #home-banners .home-banner { position: absolute; top: 2px; left: 0px; height: 320px; overflow: hidden;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.js-enabled #home-banners .home-banner img { display: block;
+}
+#home-banners .home-banner .summary { position: absolute; bottom: 0px; left: 0px; background: rgb(0, 51, 102); background: rgba(0, 51, 102, 0.9); width: 100%;
+}
+#home-banners .home-banner p { margin: 10px 20px 20px 20px; width: 75%;
+}
+#home-banners .home-banner p a { color: #fff;
+}
+#home-banners .home-banner p a:hover, #home-banners .home-banner p a:active { color: #A9C5E0;
+}
+#home-banners .home-banner p.title { margin-bottom: -10px; font-size: 20px; font-weight: bold; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;font-style:normal;
+}
+#home-banners .home-banner p.button-container { position: absolute; bottom: -14px; right: -14px; width: auto;
+}
+#home-banners .home-banner a.button { background: #134272; padding: 8px 16px; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: bold;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+} 
+#home-banners .home-banner a.button::after { color: #708DA9; font-size: 1.9em; position: relative; top: 2px; margin-left: 16px;
+}
+#home-banners .home-banner a.button:hover, #home-banners .home-banner a.button:active { background: #245C94;
+}
+#home-banners .banner-navigation { position: absolute; top: 10px; right: 10px; padding: 5px 0px 5px 5px; background: rgb(0, 51, 102); background: rgba(0, 51, 102, 0.8); 
+	border-radius: 5px;
+}
+#home-banners .next-banner,
+#home-banners .previous-banner,
+#home-banners .play-pause-banner { display: block; float: left; width: 25px; margin: 0px 5px 0px 0px; text-indent: -300px; overflow: hidden;
+	-webkit-transition: opacity 300ms linear;
+}
+#home-banners .next-banner:hover, #home-banners .next-banner:active,
+#home-banners .previous-banner:hover, #home-banners .previous-banner:active,
+#home-banners .play-pause-banner:hover, #home-banners .play-pause-banner:active { opacity: 0.6;
+}
+#home-banners .previous-banner { background: url('http://brand.unimelb.edu.au/homepage-assets/images/icons/banner-back.gif') 50% 50% no-repeat;
+}
+#home-banners .next-banner { background: url('http://brand.unimelb.edu.au/homepage-assets/images/icons/banner-forward.gif') 50% 50% no-repeat; margin-right: 0px;
+}
+#home-banners .play-pause-banner { background: url('http://brand.unimelb.edu.au/homepage-assets/images/icons/banner-pause.gif') 50% 50% no-repeat;
+}
+#home-banners.paused .play-pause-banner { background: url('http://brand.unimelb.edu.au/homepage-assets/images/icons/banner-play.gif') 50% 50% no-repeat;
+}
+#home-banners .banner-count { color: rgb(165, 195, 222); color: rgba(165, 195, 222, 0.7); font-size: 11px; letter-spacing: 3px; padding: 1px 8px; border-left: 1px solid #002C4F; font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+#home-banners .banner-count em { font-style: normal;
+}
+/*	IE fixes	*/
+body #home-banners { *top: 16px;
+}
+body #home-banners .banner-count { *color: rgb(165, 195, 222);
+}
+
+/* END BANNERS */
+
+/* RESEARCH PROJECTS DISPLAY */
+.recruit {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #666;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+}
+.team { padding-top: 0.5em; padding-bottom: 0.5em;}
+ 
+.step_content {
+	display: none;
+	padding-bottom: 2em;
+}
+.step_link_closed, .step_link_opened {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #DFE9F3;
+	clear: both;
+	padding: 10px;
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+}
+.step_link_closed:before, .step_link_opened:before {
+	content: "\00BB\0020";
+}
+.step_link_closed:hover, .step_link_closed:focus, .step_link_opened:hover, .step_link_opened:focus, .step_link_opened:focus {
+	background-color: #eee;
+	color: #903;
+}
+.step_link_closed:link, .step_link_opened:link {
+	color: #003366;
+}
+.step_link_closed:visited, .step_link_opened:visited {
+	color: #003366;
+}
+.main .step_link_closed, .main .step_link_opened {
+	border: none;
+}
+/* END */
+
+/* STYLES FOR SORTABLE TABLES */
+
+.TabbedPanelsContentVisible table, .TabbedPanelsContentVisible table.tablesorter,
+table.tablesorter { 
+	width: 100%; 
+}
+
+.TabbedPanelsContentVisible table th, .TabbedPanelsContentVisible table.tablesorter th,
+table.tablesorter th { 
+    background-color: #fff; 
+}
+.TabbedPanelsContentVisible table.tablesorter th.header,
+table.tablesorter th.header { 
+   	background-image: url(/lib/images/bg.gif); 	
+    background-repeat: no-repeat; 
+    background-position: center right; 
+	padding-right: 20px;
+	cursor:pointer;
+}
+.TabbedPanelsContentVisible table.tablesorter th.headerSortUp,
+table.tablesorter th.headerSortUp { 
+    background-image: url(/lib/images/asc.gif); 	
+    background-repeat: no-repeat; 
+    background-position: center right; 
+    background-color: #a8c5e0; 
+}
+.TabbedPanelsContentVisible table.tablesorter th.headerSortDown,
+table.tablesorter th.headerSortDown { 
+   background-image: url(/lib/images/desc.gif); 	
+    background-repeat: no-repeat; 
+    background-position: center right; 
+    background-color: #a8c5e0; 
+} 
+/* END */
+
+/* STYLES TO VARY DISPLAY OF ITEMS ON A PHONE, TABLET OR DESKTOP */
+
+/* SMALL SCREEN SPECIFIC STYLES */
+@media screen and (max-device-width: 599px) {
+	/* Hide on a small screen	*/
+	.desktop, .banners, #smoothmenu1 {
+		display: none;
+}
+	/* Show on a small screen */
+	.phone {
+		display: block;
+}}
+/* LARGE SCREEN SPECIFIC STYLES */
+@media screen and (min-device-width: 600px) {
+	/* Show on a large screen	*/
+	.desktop, .banners, #smoothmenu1 {
+		display: block;
+}
+	/* Hide on a large screen */
+	.phone {
+		display: none;
+}
+	/* Align .button to bottom of enclosing div */
+	.page-preview {
+		position:relative;
+}	
+	.page-preview {
+		padding-bottom: 40px;
+	}
+	.page-preview .button {
+		position:absolute;
+		display:block;
+		bottom: 0;
+		clear: both;
+}}
+/* END */
+
+
+/* PRINT STYLES */
+
+@media print {
+
+
+.main a:after {
+    content: " (" attr(href) ")"; 
+	}
+	
+.main a[href^="mailto"]:after {
+	content: "";
+	}
+
+
+}
+
+/* END */
+/*  iPhone-horizontal */
+@media screen and (max-width: 630px) {
+
+}
+/*  iPhone-vertical */
+@media screen and (max-width: 480px) {
+
+}
