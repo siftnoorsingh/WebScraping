@@ -1,6 +1,6 @@
 # Web Scraping
 
-In this project, we use Web scraping to extract content from an old html file and migrate it to a new format.
+In this project, we use Web Scraping to extract content from an old html file and migrate it to a new format.
 The libraries used are:
 * Beautiful Soup - for parsing HTML data
 * Pandas - for formatting the data into the required format
